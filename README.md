@@ -2,4 +2,4 @@
 # Atlas Senior Living customized code repository
 ## Main contributor: grosales@atlasseniorliving.com
 ### Here you will find all customized code APPLIED to UX|UI for Atlas Senior Living communities network
-#### Created January 2022
+#### Created June 2022
