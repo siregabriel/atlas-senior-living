@@ -1,1 +1,1 @@
-# Atlas Senior Living FOOTER 
+# Atlas Senior Living customized code footer 
