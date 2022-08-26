@@ -369,6 +369,9 @@
         font-size: 11px;
         color: darkgrey;
     }
+    p#date {
+        display: initial;
+    }
 </style>
 
 <body>
@@ -595,10 +598,19 @@
             <li><a>Texas</a></li>
         </ul>
     </div>
+   
 
     <div class="footer-copyright">
-        <h5 class="copyright">2022 Copyright © Atlas Senior Living</h5><a class="bug" href="https://atlasseniorliving.com/website-feedback/">𓆣 Report a bug or technical issue</a>
+        <h5 class="copyright"><p id="date"></p> Copyright © Atlas Senior Living</h5><a class="bug" href="https://atlasseniorliving.com/website-feedback/">𓆣 Report a bug or technical issue</a>
     </div>
+
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("date").innerHTML = year;
+        //debe de correr despues del ID indicado
+        
+    </script>
 
 </body>
 
