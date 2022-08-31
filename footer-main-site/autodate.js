@@ -1,4 +1,7 @@
-
+        
+        
+        
+        //<p id="date"></p>
          //auto actualizacion de año con javascript
         const d = new Date();
         let year = d.getFullYear();
