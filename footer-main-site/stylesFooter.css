@@ -1,0 +1,364 @@
+    * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    section.center {
+        background: #2A2B2B;
+        border-top: 1px solid cornflowerblue;
+    }
+
+    .table__wrapper {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .table__wrapper .table {
+        width: 100%;
+        max-width: 100%;
+        border: none;
+    }
+
+    /* ------- Presentational Formatting --------- */
+    h1 {
+        text-align: center;
+    }
+
+    .center {
+        margin: 0 auto;
+    }
+
+    .table {
+        border-collapse: collapse;
+    }
+
+
+    .table td {
+        border: none !important;
+    }
+
+    table.table p {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+        text-transform: capitalize;
+        color: gray;
+    }
+
+    p.atlas-footer {
+        color: #727373;
+    }
+
+
+    table.table ul {
+        padding-left: 0;
+    }
+
+    table.table ul li {
+        list-style: none;
+        text-align: left;
+    }
+
+
+
+    /* Table contents fixed at top*/
+    .table td,
+    .table th {
+        padding: .5em;
+        vertical-align: top !important;
+        text-align: left;
+    }
+
+    .table th {
+        text-align: left;
+    }
+
+    @media screen and (max-width:991px) {
+        .table {
+            margin: 0 auto;
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        .table thead {
+            position: absolute;
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 0;
+            border: 0;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+        }
+
+        .table tbody,
+        .table tr,
+        .table th,
+        .table td {
+            display: block;
+            padding: 0;
+            text-align: left;
+            white-space: normal;
+        }
+
+        .table tr td,
+        .table tr th {
+            vertical-align: middle;
+            overflow: hidden;
+            position: relative;
+            vertical-align: top;
+            border-top: none;
+            width: 100%;
+            white-space: normal;
+        }
+
+        .table th[scope="row"] {
+            width: 100%;
+            text-align: center;
+            display: block;
+            background-color: #B3BFC6;
+            margin: 0 auto;
+            padding: .5em 0;
+        }
+
+        .table td[data-header]:before {
+            content: attr(data-header);
+            display: block;
+            float: left;
+            width: 50%;
+            color: #000000;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .table td[data-header]>* {
+            display: block;
+            width: 50%;
+            float: right;
+            clear: right;
+            padding-left: 1em;
+            margin-top: 0;
+        }
+
+        .table td[data-header]:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50%;
+            padding-bottom: 200%;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .center {
+            width: 100%;
+        }
+    }
+
+    /***************footer area******************/
+    .footer-logo {
+        padding: 10px;
+        height: 60px;
+    }
+
+    .footer-logo img {
+        opacity: 0.7;
+    }
+
+    .footer-locations,
+    .footer-logo {
+        background: #1d1e1e;
+        text-align: center;
+    }
+
+    ul.locations-list {
+        margin: 0;
+    }
+
+    table.table ul li a {
+        text-decoration: none !important;
+        color: #727373;
+        font-size: 16px;
+        text-transform: capitalize;
+        text-align: left !important;
+        font-weight: normal;
+    }
+
+
+    table.table ul li a.facebook {
+        text-decoration: none;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/06/facebook-icon.png");
+        background-repeat: no-repeat;
+        padding-left: 29px;
+        padding-top: 3px;
+    }
+
+    table.table ul li a.facebook:hover {
+        text-decoration: none !important;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/06/facebook-icon.png");
+        background-repeat: no-repeat;
+        padding-left: 29px;
+        padding-top: 3px;
+        color: #4867AA;
+    }
+
+    table.table ul li a.linkedin {
+        text-decoration: none;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/06/linkedin-icon.png");
+        background-repeat: no-repeat;
+        padding-left: 29px;
+        padding-top: 3px;
+    }
+
+    table.table ul li a.linkedin:hover {
+        text-decoration: none !important;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/06/linkedin-icon.png");
+        background-repeat: no-repeat;
+        padding-left: 29px;
+        padding-top: 3px;
+        color: #0A66C2;
+    }
+
+    table.table ul li a.instagram {
+        text-decoration: none;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/06/instagram-icon-1.png");
+        background-repeat: no-repeat;
+        padding-left: 29px;
+        padding-bottom: 5px;
+        padding-top: 3px;
+    }
+
+    table.table ul li a.youtube {
+        text-decoration: none;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/06/youtube-icon.png");
+        background-repeat: no-repeat;
+        padding-left: 27px;
+        padding-top: 1px;
+        border-radius: 7px;
+    }
+
+    table.table ul li a.youtube:hover {
+        text-decoration: none !important;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/06/youtube-icon.png");
+        background-repeat: no-repeat;
+        padding-left: 27px;
+        padding-top: 1px;
+        border-radius: 7px;
+        color: red;
+    }
+
+    table.table ul li a:hover {
+        text-decoration: underline !important;
+        color: #8E8E8E;
+    }
+
+    a.link {
+        text-decoration: none;
+        opacity: 0.7;
+        text-transform: capitalize !important;
+        font-weight: 300;
+    }
+
+    a.link:hover {
+        text-decoration: underline;
+    }
+
+    h4.footer-phone {
+        font-size: 1.4em;
+        text-align: left;
+        color: white;
+        padding-top: 10px;
+        ;
+    }
+
+    ul.locations-list li {
+        display: inline;
+        color: #8E8E8E;
+        font-family: arial;
+        font-size: medium;
+        padding-right: 40px;
+        opacity: 0.6;
+    }
+
+    .footer-copyright {
+        background: #1d1e1e;
+        color: #727373;
+        text-align: center !important;
+    }
+
+    .footer-copyright h5.copyright {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        margin: 0;
+        padding: 20px 20px 0px 20px;
+        text-align: center !important;
+        text-transform: capitalize !important;
+        font-weight: 200;
+        font-size: 14px;
+        color: white;
+    }
+
+    h3.footer-title-column {
+        text-transform: capitalize;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        font-weight: 100;
+        font-family: arial !important;
+        opacity: 0.7;
+        font-size: 1em;
+        text-align: left;
+    }
+
+    h3.footer-title-column-locations {
+        text-transform: capitalize;
+        color: antiquewhite;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        font-weight: 100;
+        font-family: arial !important;
+        opacity: 0.7;
+        font-size: 19px;
+        text-align: left;
+    }
+
+    h6.states {
+        font-size: 12px;
+        color: antiquewhite;
+        margin: 0;
+        text-align: left;
+    }
+
+    a.community {
+        font-size: 12px !important;
+    }
+
+    p.address {
+        font-size: 14px;
+    }
+
+    img.housing {
+        opacity: 0.8;
+        padding-top: 40px;
+    }
+
+    img.lifeloop {
+        opacity: 0.8;
+    }
+
+    h4.lifeloop {
+        font-size: 12px;
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0 !important;
+    }
+
+    a.bug {
+        font-size: 11px;
+        color: darkgrey;
+    }
+
+    p#date {
+        display: initial;
+    }
