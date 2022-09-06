@@ -186,6 +186,14 @@
         text-align: center;
     }
 
+    .footer-logo-inline {
+        background: #1d1e1e;
+        text-align: center;
+        height: 60px;
+        padding-bottom: 55px;
+        padding-top: 30px!important;
+    }
+
     ul.locations-list {
         margin: 0;
     }
@@ -354,6 +362,65 @@
     p#date {
         display: initial;
     }
+    li.facebook-ln, li.instagram-ln, li.linkedin-ln, li.youtube-ln  {
+        display: inline!important;
+        padding-right: 40px;
+    }
+
+    li.facebook-ln a, li.instagram-ln a, li.linkedin-ln a, li.youtube-ln a {
+        opacity: 0.4;
+        width: 30px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    }
+
+    li.facebook-ln a:hover, li.instagram-ln a:hover, li.linkedin-ln a:hover, li.youtube-ln a:hover {
+        color: transparent;
+        opacity: 1!important;
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    }
+    
+    li.facebook-ln a {
+        text-decoration: none;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/09/facebook-color-logo.png");
+        background-repeat: no-repeat;
+        padding-top: 3px;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        color: transparent;
+    }
+     li.instagram-ln a {
+        text-decoration: none;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/09/instagram-color-logo-1.png");
+        background-repeat: no-repeat;
+        padding-top: 3px;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        color: transparent;
+    }
+    li.linkedin-ln a {
+        text-decoration: none;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/09/linked-in-color-logo.png");
+        background-repeat: no-repeat;
+        padding-top: 3px;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        color: transparent;
+    }
+    li.youtube-ln a {
+        text-decoration: none;
+        background-image: url("https://atlasseniorliving.com/wp-content/uploads/2022/09/youtube-color-logo.png");
+        background-repeat: no-repeat;
+        padding-top: 3px;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        color: transparent;
+    }
 </style>
 
 <body>
@@ -384,14 +451,17 @@
                                 <li><a href="https://atlasseniorliving.com/blog/">Blog</a></li>
                             </ul>
 
-                            <h3 class="footer-title-column">Connect</h3>
+                            <img class="housing" src="https://atlasseniorliving.com/wp-content/uploads/2022/07/equal-housing.png"
+                                alt="Equal Housing Opportunity">
+
+                            <!--<h3 class="footer-title-column">Connect</h3>
                             <ul class="social">
                                 <li class="facebook"><a class="facebook" href="https://es-la.facebook.com/atlasseniorliving/" target="_blank">Facebook</a></li>
                                 <li class="instagram"><a class="instagram" href="https://www.instagram.com/atlasseniorliving/" target="_blank">Instagram</a></li>
                                 <li class="linkedin"><a class="linkedin" href="https://www.linkedin.com/company/atlas-senior-living" target="_blank">LinkedIn</a></li>
                                 <li class="youtube"><a class="youtube" href="https://www.youtube.com/channel/UCsrQaQzoPyRJfXvcY6Bi9cA" target="_blank">YouTube</a></li>
                             </ul>
-
+                            <-->
                         </td>
                         <td>
                             <h3 class="footer-title-column">Company</h3>
@@ -414,7 +484,7 @@
                                 </li>
                             </ul>
 
-                            <img class="housing" src="https://atlasseniorliving.com/wp-content/uploads/2022/07/equal-housing.png" alt="Equal Housing Opportunity">                           
+                                                       
                         </td>
                         <td>
                             <h3 class="footer-title-column">Resources</h3>
@@ -558,6 +628,17 @@
             </table>
         </div>
     </section>
+    
+    <!-- PRUEBA-->
+    <div class="footer-logo-inline">
+        <ul class="social-inline">
+            <li class="facebook-ln"><a class="facebook-ln" href="https://es-la.facebook.com/atlasseniorliving/" target="_blank">Facebook</a></li>
+            <li class="instagram-ln"><a class="instagram-ln" href="https://www.instagram.com/atlasseniorliving/" target="_blank">Instagram</a></li>
+            <li class="linkedin-ln"><a class="linkedin-ln" href="https://www.linkedin.com/company/atlas-senior-living" target="_blank">LinkedIn</a></li>
+            <li class="youtube-ln"><a class="youtube-ln" href="https://www.youtube.com/channel/UCsrQaQzoPyRJfXvcY6Bi9cA" target="_blank">YouTube</a></li>
+        </ul>
+    </div>
+    <!-- PRUEBA-->
 
     <div class="footer-logo">
         <a href="https://www.atlasseniorliving.com/#ast-container"><img src="https://atlasseniorliving.com/wp-content/uploads/2022/07/atlas-white-footer.png"></a>
